@@ -4,7 +4,7 @@ networks:
 volumes:
   mysql:
 services:
-  bakcend:
+  backend:
     image: backend:1.0.0
     networks:
     - expense
