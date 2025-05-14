@@ -1,4 +1,5 @@
 #FROM nginx
+#running nginx container as not root
 FROM nginx:stable-alpine3.21-perl
 RUN mkdir -p /var/cache/nginx/client_temp && \
         mkdir -p /var/cache/nginx/proxy_temp && \
