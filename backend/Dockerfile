@@ -2,7 +2,7 @@
 # Intermediate container -1 (IC-1)
 FROM node:20.18.3-alpine3.21
 # On top of IC-1 instruction-2 is executed, and save this layer 2nd image. IC-1 removed
-RUN addgroup -S expense \ && adduser -S expense -G expense \
+RUN addgroup -S expense  && adduser -S expense -G expense  \ && 
 #Create IC-2, on top of IC-2 instruction-3 is executed and save this as layer3 image.IC-2 removed
  mkdir /opt/backend
 RUN chown -R expense:expense /opt/backend
