@@ -18,7 +18,7 @@ app.use(cors());
 
 //Health Checking
 app.get('/health',(req,res)=>{
-    res.json("This is the health check");
+    res.json("This is the health check for blue-3.0.0");
 });
 
 // ADD TRANSACTION
@@ -102,4 +102,4 @@ app.get('/transaction/id',(req,res)=>{
     t=moment().unix()
     console.log("{ \"timestamp\" : %d, \"msg\" : \"App Started on Port %s\" }", t,  port)
   })
-//// debug test
+//
